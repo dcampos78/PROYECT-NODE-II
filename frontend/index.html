@@ -11,15 +11,22 @@
         <img id="scifi" src="https://res.cloudinary.com/dmbeu9ipe/image/upload/v1701924851/wsmdeyrsqazhxuohuxuc.png" alt="scifi-logo">
     </header>
     <div class="container">
-        <div class="container-form">
         <h1 class="container-form-title">¡Amplia tu biblioteca SYFI!</h1>
+        <div class="container-form">
         <form id="bookForm" action="action" method="POST" enctype="multipart/form-data">
             <input type="text" id="name" class="name" placeholder="Título" required>
             <input type="number" id="publication" class="publication" placeholder="Año de publicacion">
             <input type="number" id="pages" class="pages" placeholder="Numero de páginas">
             <input type="text" id="series" name="series" placeholder="Saga a la que pertenece">
-            <input type="file" id="picture" calss="picture" placeholder="Solo admite archivos .JPG, .JPEG y .PNG">
+            <input type="file" id="picture" class="picture" placeholder="Solo admite archivos .JPG, .JPEG y .PNG">
             <button type="submit">Añadir libro</button>
+        </form>
+        <form id="authorForm" action="action" method="POST" enctype="multipart/form-data">
+            <input type="text" id="name" class="name" placeholder="Título" required>
+            <input type="text" id="country" class="country" placeholder="Pais" required>
+            <input type="text" id="titles" class="titles" placeholder="Titulos">
+            <input type="file" id="picture" class="picture" placeholder="Solo admite archivos .JPG, .JPEG y .PNG">
+            <button type="submit">Añadir Author</button>
         </form>
     </div>
     <div class="container-list">
