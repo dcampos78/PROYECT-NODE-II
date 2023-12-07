@@ -49,16 +49,16 @@ button {
     font-weight: bold;
     background-color: goldenrod;
 }
-.container-list-title{
+.container-list-titlebooks, .container-list-titleauthors{
     text-decoration: underline;
 }
-#booksList {
+#booksList, #authorsList {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
 }
 
-.bookCard {
+.bookCard, .authorCard {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
@@ -68,7 +68,7 @@ button {
     background-size: cover;
 }
 
-.book-image {
+.book-image, .author-image {
     width: 60%;
     text-align: center;
 }
@@ -82,37 +82,32 @@ footer{
     color:black ;
     font-weight: bold;
     display: flex;
+    justify-content: space-between;
+}
+.footer-copy{
+    width: 50%;
+    display: flex;
+    align-items: center;
 }
 #copy{
-    object-fit: contain;
+    width: 10%;
 }
 
 /*Media Queries*/
-@media (min-width: 1199.98px)  {
-
+@media (max-width: 575.98px)and (orientation:portrait) {
+   
 }
-/*Fin Escritorio*/
-
-/*Tablet*/
-/*Portrait*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+   
+}
 @media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
    
 }
-
-/*landscape*/
 @media (min0-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
    
 }
-/*fin tablet*/
+@media (min-width: 1199.98px)  {
 
-/*movil*/
-/*Portrait*/
-/*Default*/
-@media (max-width: 575.98px)and (orientation:portrait) {
-   
- }
-/*landscape*/
-@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
-    
 }
-/*fin movil*/
+
+

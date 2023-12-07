@@ -23,6 +23,22 @@ async function fetchBooks() {
         booksList.innerHTML += bookCard;
     });
 }
+async function fetchAuthors() {
+    const response = await fetch('http://localhost:3000/autores'); 
+    const authors = await response.json();
+    const authorsList = document.getElementById('authorsList');
+    booksList.innerHTML = '';
+    console.log(authors)
+    authors.forEach(author => {
+        const authorCard = `<div class="authorCard">
+                                <h3>${author.name}</h3>
+                                <center><img src="${author.picture}" alt="Imagen del autor ${author.name}" class="author-image"></center>
+                                <p>Pais: Año ${author.country}</p>
+                                <p>Titulos: ${author.titles}</p>
+                            </div>`;
+        authorsList.innerHTML += authorCard;
+    });
+}
 
 async function addBook() {
     const formData = new FormData();

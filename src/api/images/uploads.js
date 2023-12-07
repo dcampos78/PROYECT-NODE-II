@@ -23,18 +23,18 @@ const images = [
     '.src/api/images/un guijarro en el cielo.jpg',
 ]
 
-(async function run() {
-    for (const image of images){
-   const result =  await cloudinary.uploader.upload(image);
-        console.log('result')
-   }
-})();
+// (async function run() {
+//     for (const image of images){
+//    const result =  await cloudinary.uploader.upload(image);
+//         console.log('result')
+//    }
+// })();
 
-// const image = './src/api/images/LOGOTIPO_UPGRADE-01.png';
+const image = './src/api/images/mars plus.jpg';
 
-// cloudinary.uploader.upload(image).then(result => {
-//     console.log('result');
-// });
+cloudinary.uploader.upload(image).then(result => {
+    console.log('result');
+});
 
     
     

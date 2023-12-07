@@ -8,7 +8,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "seed": "node src/seed/books.seed.js",
-    "image": "node uploads.js"
+    "image": "node src/api/images/uploads.js"
   },
   "keywords": [],
   "author": "",
