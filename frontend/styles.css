@@ -11,7 +11,7 @@ body {
 header{
     width: 100vw;
     position: fixed;
-    min-height: 5vh;
+    min-height: 60vh;
     top: 0;
     display: flex;
     justify-content: center;
@@ -46,8 +46,12 @@ input, button {
 
 button {
     margin-top: 1rem;
+    font-weight: bold;
+    background-color: goldenrod;
 }
-
+.container-list-title{
+    text-decoration: underline;
+}
 #booksList {
     display: flex;
     flex-wrap: wrap;
@@ -82,3 +86,33 @@ footer{
 #copy{
     object-fit: contain;
 }
+
+/*Media Queries*/
+@media (min-width: 1199.98px)  {
+
+}
+/*Fin Escritorio*/
+
+/*Tablet*/
+/*Portrait*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+   
+}
+
+/*landscape*/
+@media (min0-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {
+   
+}
+/*fin tablet*/
+
+/*movil*/
+/*Portrait*/
+/*Default*/
+@media (max-width: 575.98px)and (orientation:portrait) {
+   
+ }
+/*landscape*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+    
+}
+/*fin movil*/
