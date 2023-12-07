@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    color: purple;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(https://res.cloudinary.com/dmbeu9ipe/image/upload/v1701926213/ldqsj3ddec2qxmwht55z.jpg);
+    background-size: cover;
+}
+/*Header*/
+header{
+    width: 100vw;
+    position: fixed;
+    min-height: 5vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://res.cloudinary.com/dmbeu9ipe/image/upload/v1701925611/vdnkk3a74brvlrdkjbjw.jpg);
+    background-size:inherit;
+}
+#scifi {
+    object-fit: inherit;
+    padding: 20px;
+    width: 40%;
+    height: 50%;
+}
+/*Container*/
+.container{
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    top: 11vh;
+}
+
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+input, button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button {
+    margin-top: 1rem;
+}
+
+#booksList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.bookCard {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    background-image: url(https://res.cloudinary.com/dmbeu9ipe/image/upload/v1701928994/do9lsndfpbciam4bjnra.jpg);
+    background-size: cover;
+}
+
+.book-image {
+    width: 60%;
+    text-align: center;
+}
+/*Footer*/
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-image: url(https://res.cloudinary.com/dmbeu9ipe/image/upload/v1701925611/vdnkk3a74brvlrdkjbjw.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:black ;
+    font-weight: bold;
+    display: flex;
+}
+#copy{
+    object-fit: contain;
+}
